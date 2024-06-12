@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/hashtag.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="names">
+            <div>
+                <img src="images/Xmarker.svg" width="15" height="15" alt="">
+                <label for="player1-name">Player 1:</label>
+                <input type="text" id="player1-name" placeholder="Type a name" required>
+            </div>
+            <div>
+                <img src="images/Omarker.svg" width="15" height="15" alt="">
+                <label for="player2-name">Player 2:</label>
+                <input type="text" id="player2-name" placeholder="Type a name" required>
+            </div>
+            <div id="strbtn"><button class="start">START</button></div>
+        </div>
+        <div class="display hide">
+            <div class="names-display">
+                <div class="player1">
+                </div>
+                <div class="score" id="score1">0</div>
+                <div class="player2">
+                </div>
+                <div class="score" id="score2">0</div>
+                <div id="rstbtn"><button class="reset">RESET</button></div>
+            </div>
+        </div>
+        <div class="game">
+            <div class="row">
+                <div class="tiles" data-position="p1"></div>
+                <div class="tiles" data-position="p2"></div>
+                <div class="tiles" data-position="p3"></div>
+            </div>
+            <div class="row">
+                <div class="tiles" data-position="p4"></div>
+                <div class="tiles" data-position="p5"></div>
+                <div class="tiles" data-position="p6"></div>
+            </div>
+            <div class="row">
+                <div class="tiles" data-position="p7"></div>
+                <div class="tiles" data-position="p8"></div>
+                <div class="tiles" data-position="p9"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
